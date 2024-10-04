@@ -1,0 +1,492 @@
+{% include 'header.html' %}
+{% load static %}
+<body>
+
+  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+      aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+      <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+        <use href="#circle-half"></use>
+      </svg>
+      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+          aria-pressed="false">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em">
+            <use href="#sun-fill"></use>
+          </svg>
+          Light
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+          aria-pressed="false">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em">
+            <use href="#moon-stars-fill"></use>
+          </svg>
+          Dark
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+          aria-pressed="true">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em">
+            <use href="#circle-half"></use>
+          </svg>
+          Auto
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <nav class="navbar-style " data-bs-theme="dark">
+    <ul style="list-style: none;" class="    ">
+      <li><a class="" href="#"><span class="material-symbols-outlined">
+            home_app_logo
+          </span></a></li>
+      <li><a class="" href="#aboutme"><span class="material-symbols-outlined">
+            full_coverage
+          </span></a></li>
+      <li><a class="" href="#abilities"><span class="material-symbols-outlined">
+            webhook
+          </span></a></li>
+
+      <li><a class="" href="#services"><span class="material-symbols-outlined">
+            workspaces
+          </span></a></li>
+      <li><a class="" href="#portfolio"><span class="material-symbols-outlined">
+            collections_bookmark
+          </span></a></li>
+      <li><a class="" href="#contact"><span class="material-symbols-outlined">
+            contacts
+          </span></a></li>
+    </ul>
+  </nav>
+
+
+  <main>
+    <div style="margin-bottom: 3rem;" class="mb-6  particle jarallax">
+      <!--<img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg" class="img-fluid home-bg-image"
+        alt="Responsive image"> -->
+      <div id="particles-js"></div>
+      <div class="particle_overlay"></div>
+      <div class="container">
+        <div class="carousel-caption text-start " style="margin-bottom: 3rem;">
+          <div style="height: 80vh; width: 70vw; display: table; overflow: hidden;  " class="text-center">
+            <picture style="vertical-align: middle; display: table-cell; ">
+              <img
+                src="https://statusneo.com/wp-content/uploads/2023/02/MicrosoftTeams-image551ad57e01403f080a9df51975ac40b6efba82553c323a742b42b1c71c1e45f1.jpg"
+                class="img-fluid img-thumbnail" style="height: 200px; width: 200px; border-radius: 50%;  " alt="Cover">
+              <h1 style="padding-top: 10px;">AZ <span style="color: #E3872D;">KAFI</span></h1>
+              <h5 style="padding-top: 7px;" class="fw-normal">I'm a <span class="animation_text_word"></span>
+              </h5>
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================== -->
+
+    <!-- SCROLL DOWN -->
+    <a href="#aboutme">
+      <div class="scroll-down-container">
+        <div class="scroll-down-icon"></div>
+      </div>
+    </a>
+    <div class="container marketing">
+
+      <!-- ABOUT ME SECTION -->
+      <div id="aboutme" style="margin-top: 7rem; margin-bottom: 5rem;" class="row featurette parallax-container">
+        <div style="display: flex; margin-bottom: 7rem;">
+          <h1 style="    font-size: 4rem;
+          color: orange;">|</h1>
+          <div style="margin-top: 7px; margin-left: 10px;">
+            <h1 style="margin-bottom: 0px; text-transform: uppercase;letter-spacing: -.5px;    word-spacing: -8.5px;
+            font-size: 3rem;
+            font-family: monospace;" class="fw-normal">ABOUT ME</h1>
+            <p style="margin-top: -8px; font-family: Montserrat; letter-spacing: 1px;">Informations about me</p>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto parallax-image"
+            width="400" height="400"
+            xmlns="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
+            role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>AZ Kafi</title>
+          </svg>
+        </div>
+        <div style="padding-left: 35px;" class="col-md-8">
+          <h4 style="margin-top: -45px; margin-bottom: 15px; font-size: 24px;  font-weight: 500;"
+            class="featurette-heading fw-normal lh-1">I'm AZ Kafi and <span style="color: #E3872D;"
+              class="animation_text_word"></span></h4>
+          <div class="definition">
+            <p style=" font-size: 15px; font-weight: 400;">Hi! My name is <strong>Alan Michaelis</strong>. I am a Web
+              Developer, and I'm very passionate and
+              dedicated to my work. With 20 years experience as a professional Web developer, I have acquired the skills
+              and knowledge necessary to make your project a success. I enjoy every step of the design process, from
+              discussion and collaboration to concept and execution, but I find the most satisfaction in seeing the
+              finished product do everything for you that it was created to do.</p>
+          </div>
+          <div class="about_contact_details">
+            <ul>
+              <li>
+                <span><label>Birthday:</label> 01.07.1990</span>
+              </li>
+              <li>
+                <span><label>Age:</label> 28</span>
+              </li>
+              <li>
+                <span><label>City:</label> New York, USA</span>
+              </li>
+              <li>
+                <span><label>Interests:</label> Soccer, UFC</span>
+              </li>
+              <li>
+                <span><label>Study:</label> Chicago University</span>
+              </li>
+              <li>
+                <span><label>Degree:</label> Master</span>
+              </li>
+              <li>
+                <span><label>Website:</label> <a href="#">www.mywebsite.com</a></span>
+              </li>
+              <li>
+                <span><label>Mail:</label> <a href="mailto:example@gmail.com">mymail&#64;gmail.com</a></span>
+              </li>
+              <li>
+                <span><label>Phone:</label> <a href="#">+77 022 177 05 05</a></span>
+              </li>
+              <li>
+                <span><label>Twitter:</label> <a href="#">&#64;myusername</a></span>
+              </li>
+            </ul>
+          </div>
+          <div class="custom_button">
+            <ul>
+              <li>
+                <a href="index.html"><span>Download CV</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="abilities" class="row">
+        <div class="inner_wrap">
+          <div class="leftbox">
+            <div class="ability_title">
+              <h4>Some About my Abilities</h4>
+            </div>
+            <p>These are about my programming language abilities. I've learned multi-programming languages for work or
+              project purposes. I've developed lots of projects with those languages including this website you are
+              roaming. </p>
+          </div>
+          <div style="margin-bottom: 5rem; " class="rightbox">
+            <div class="process_item">
+              <div class="process_title">
+                <p>REACTjs<span class="process_title_left_span">2years of experience</span></p><span>50%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar"
+                  style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="process_item">
+              <div class="process_title">
+                <p>HTML<span class="process_title_left_span">6years of experience</span></p><span>90%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar"
+                  style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="process_item">
+              <div class="process_title">
+                <p>CSS<span class="process_title_left_span">6years of experience</span></p><span>70%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                  style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="process_item">
+              <div class="process_title">
+                <p>PHP<span class="process_title_left_span">4years of experience</span></p><span>75%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                  style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="process_item">
+              <div class="process_title">
+                <p>JAVA<span class="process_title_left_span">3years of experience</span></p><span>95%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                  style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="process_item">
+              <div class="process_title">
+                <p>PYTHON<span class="process_title_left_span">2years of experience</span></p><span>60%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                  style="width: 67%" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--SERVICES-->
+      <div id="services" class="row">
+        <div style="display: flex; margin-bottom: 4rem;">
+          <h1 style="    font-size: 4rem;
+          color: orange;">|</h1>
+          <div style="margin-top: 7px; margin-left: 10px;">
+            <h1 style="margin-bottom: 0px; text-transform: uppercase;letter-spacing: -.5px;    word-spacing: -8.5px;
+            font-size: 3rem;
+            font-family: monospace;" class="fw-normal">SERVICES</h1>
+            <p style="margin-top: -8px; font-family: Montserrat; letter-spacing: 1px;">Meet our amazing services</p>
+          </div>
+        </div>
+        <div class="card card_style" style="width:350px">
+          <span class="material-symbols-outlined  sevice_icon" data-bs-theme="dark">
+            view_quilt
+          </span>
+          <div class="card-body">
+            <h4 class="card-title">Web Design</h4>
+            <p class="card-text">Web design encompasses many different skills and disciplines in the production and
+              maintenance of websites.</p>
+
+          </div>
+        </div>
+        <div class="card card_style" style="width:350px">
+          <span class="material-symbols-outlined  sevice_icon" data-bs-theme="dark">
+            view_quilt
+          </span>
+          <div class="card-body">
+            <h4 class="card-title">Web Design</h4>
+            <p class="card-text">Web design encompasses many different skills and disciplines in the production and
+              maintenance of websites.</p>
+
+          </div>
+        </div>
+        <div class="card card_style" style="width:350px">
+          <span class="material-symbols-outlined  sevice_icon" data-bs-theme="dark">
+            view_quilt
+          </span>
+          <div class="card-body">
+            <h4 class="card-title">Web Design</h4>
+            <p class="card-text">Web design encompasses many different skills and disciplines in the production and
+              maintenance of websites.</p>
+
+          </div>
+        </div>
+        <div class="card card_style" style="width:350px">
+          <span class="material-symbols-outlined  sevice_icon" data-bs-theme="dark">
+            view_quilt
+          </span>
+          <div class="card-body">
+            <h4 class="card-title">Web Design</h4>
+            <p class="card-text">Web design encompasses many different skills and disciplines in the production and
+              maintenance of websites.</p>
+
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!-- Protfolio SECTION -->
+      <div id="portfolio" class="row portfolio_main">
+        <div style="display: flex; margin-bottom: 7rem;">
+          <h1 style="    font-size: 4rem;
+          color: orange;">|</h1>
+          <div style="margin-top: 7px; margin-left: 10px;">
+            <h1 style="margin-bottom: 0px; text-transform: uppercase;letter-spacing: -.5px;    word-spacing: -8.5px;
+            font-size: 3rem;
+            font-family: monospace;" class="fw-normal">Projects</h1>
+            <p style="margin-top: -8px; font-family: Montserrat; letter-spacing: 1px;">Some sample of projects.</p>
+          </div>
+        </div>
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('html')"> HTML</button>
+          <button class="btn" onclick="filterSelection('java')"> Java</button>
+          <button class="btn" onclick="filterSelection('python')"> Python</button>
+        </div>
+        <div class="col-lg-4 filter_column html">
+          <figure class="image-hover">
+            <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample55.jpg" class="thumb"
+                alt="sample55" /></div>
+            <figcaption class="header">
+              <h4 class="title">Will Barrow</h4>
+              <p class="description">Which is worse, that everyone has his price, or that the price is always so low.
+              </p>
+            </figcaption><a href="#"></a>
+          </figure>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 filter_column python">
+          <figure class="image-hover">
+            <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample55.jpg" class="thumb"
+                alt="sample55" /></div>
+            <figcaption class="header">
+              <h4 class="title">Will Barrow</h4>
+              <p class="description">Which is worse, that everyone has his price, or that the price is always so low.
+              </p>
+            </figcaption><a href="#"></a>
+          </figure>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 filter_column java">
+          <figure class="image-hover">
+            <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample55.jpg" class="thumb"
+                alt="sample55" /></div>
+            <figcaption class="header">
+              <h4 class="title">Will Barrow</h4>
+              <p class="description">Which is worse, that everyone has his price, or that the price is always so low.
+              </p>
+            </figcaption><a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-lg-4 filter_column java">
+          <figure class="image-hover">
+            <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample55.jpg" class="thumb"
+                alt="sample55" /></div>
+            <figcaption class="header">
+              <h4 class="title">Will Barrow</h4>
+              <p class="description">Which is worse, that everyone has his price, or that the price is always so low.
+              </p>
+            </figcaption><a href="#"></a>
+          </figure>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See
+              for yourself.</span></h2>
+          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
+            layout would work with some actual real-world content in place.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%"
+              fill="var(--bs-secondary-color)" dy=".3em"></text>
+          </svg>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span
+              class="text-body-secondary">Checkmate.</span></h2>
+          <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
+            intended to be actually read, simply here to give you a better view of what this would look like with some
+            actual content. Your content.</p>
+        </div>
+        <div class="col-md-5">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%"
+              fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
+          </svg>
+        </div>
+      </div>
+      <div id="contact" class="row">
+        <div style="display: flex; margin-bottom: 4rem;">
+          <h1 style="    font-size: 4rem;
+          color: orange;">|</h1>
+          <div style="margin-top: 7px; margin-left: 10px;">
+            <h1 style="margin-bottom: 0px; text-transform: uppercase;letter-spacing: -.5px;    word-spacing: -8.5px;
+            font-size: 3rem;
+            font-family: monospace;" class="fw-normal">Contact Me</h1>
+            <p style="margin-top: -8px; font-family: Montserrat; letter-spacing: 1px;">Get in touch</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h4>Contact Information</h4>
+            <table class="contact_details_for_mail">
+              <tr>
+                <td class="contact_details_title">Address:</td>
+                <td class="contact_details_info">Dhaka, Bangladesh</td>
+              </tr>
+              <tr>
+                <td class="contact_details_title">E-mail:</td>
+                <td class="contact_details_info"><a href="mailto:aktaruzzmankafi017@gmail.com">aktaruzzmankafi017@gmail.com</a></td><br>
+              </tr>
+              <tr>
+                <td class="contact_details_title">Phone:</td>
+                <td class="contact_details_info"><a href="tel:+8801998666123">+880 1998-666123</a></td>
+              </tr>
+              <tr>
+                <td class="contact_details_title">Website:</td>
+                <td class="contact_details_info"><a href="#">www.website.com</a></td>
+              </tr>
+            </table>
+          </div>
+          <hr>
+
+          <form class="contact_form" action="#" style="margin-left: 1rem; margin-bottom: 2rem;">
+            <select id="country" name="country">
+              <option value="asia">Asia</option>
+              <option value="africa">Africa</option>
+              <option value="europe">Europe</option>
+              <option value="northamerica">North America</option>
+              <option value="southamerica">South America</option>
+              <option value="oceania">Oceania</option>
+              <option value="antartica">Antartica</option>
+            </select><br>
+            <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+            <input type="email" id="email" name="email" placeholder="Your Email" required><br>
+            <textarea id="message" name="message" placeholder="Write Your message" style="height:200px" required></textarea>
+            <button>Send Me</button>
+          </form>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>&copy; 2017–2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="{% static 'js/script.js' %}"></script>
+  <script src="{% static 'js/plugins.js' %}"></script>
+
+</body>
+
+</html>

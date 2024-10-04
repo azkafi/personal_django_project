@@ -1,0 +1,637 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,900);
+
+
+body {
+    font-family: "Montserrat";
+}
+
+/* Preloader
+-------------------------------------------------------*/
+
+.home-bg-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar-style {
+        position: fixed;
+        float: left;
+        display: table;
+        overflow: hidden;
+        height: 100vh;
+        z-index: 1500;
+    }
+
+    .navbar-style ul {
+        list-style: none;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .navbar-style ul li {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+}
+
+.navbar-style ul li a:hover {
+    color: yellow;
+
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar-style {
+        position: fixed;
+        overflow: hidden;
+        width: 80vw;
+        bottom: 0rem;
+        z-index: 1500;
+    }
+
+    .navbar-style ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+        justify-content: space-around;
+
+    }
+
+    .navbar-style ul li {
+        text-align: center;
+
+    }
+
+}
+
+
+.navbar-style ul a {
+    text-align: center;
+    color: black;
+    transition: 0.4s;
+}
+
+.navbar-style ul a span {
+    font-size: xx-large;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+    z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+    display: block !important;
+}
+
+
+.animation_text_word {
+    color: #E3872D;
+    font-weight: 600;
+    line-height: 1;
+    font-family: "Montserrat";
+}
+
+
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-image {
+    background-image: url('https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg');
+    /* Your background image URL */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.parallax-image:hover {
+    transform: scale(1.1);
+    /* Adjust the scale factor for the hover effect */
+}
+
+@media (max-width: 767px) {
+    .parallax-image {
+        display: none;
+    }
+}
+
+
+.scroll-down-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll-down-icon {
+    width: 40px;
+    height: 60px;
+    border: 2px solid orange;
+    border-radius: 25px;
+    position: relative;
+    animation: bounce 1s infinite alternate;
+}
+
+.scroll-down-icon::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid orange;
+    border-bottom: 2px solid orange;
+    transform: translate(-50%, 0) rotate(-45deg);
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/* ABOUT CONTACT DETAILS */
+.about_contact_details {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    margin-bottom: 13px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.about_contact_details ul {
+    margin: 0px;
+    list-style: none;
+}
+
+.about_contact_details ul li {
+    margin: 0px 0px 10px 0px;
+    float: left;
+    width: 50%;
+}
+
+.about_contact_details label {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 13px;
+    color: #000;
+    min-width: 85px;
+    display: inline-block;
+}
+
+.about_contact_details span {
+    font-weight: 300;
+}
+
+.custom_button {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: right;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.custom_button ul {
+    margin: 0px;
+    list-style-type: none;
+    float: right;
+}
+
+.custom_button ul li {
+    margin: 0px 30px 10px 0px;
+    float: left;
+}
+
+.custom_button ul li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #E3872D;
+    font-weight: 500;
+    font-family: "Montserrat";
+    padding: 12px 35px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom_button ul li a:hover:before {
+    width: 180%;
+}
+
+.custom_button ul li a:before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    height: 100%;
+    right: -75%;
+    left: 25%;
+    width: 0%;
+    background-color: #041230;
+    transform: skew(135deg);
+    transition-duration: .6s;
+    z-index: 1;
+}
+
+.custom_button ul li a span {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* PRTICLES */
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.particle {
+    height: 100vh;
+    position: relative;
+    background-image: url(https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.particle .particle_overlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    /*background-color: rgba(7, 23, 55, .8);*/
+}
+
+
+/* ABILITIES */
+#abilities {
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.inner_wrap {
+    width: 100%;
+    display: flex;
+}
+
+.leftbox {
+    width: 40%;
+}
+
+.rightbox {
+    margin-left: 2rem;
+    width: 60%;
+}
+
+.ability_title h4 {
+    margin-bottom: 1rem;
+}
+
+.process_item {
+    margin-bottom: 20px;
+    ;
+}
+
+.process_title {
+
+    font-size: small;
+    font-weight: bolder;
+    padding-bottom: px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.process_title p {
+    margin-bottom: 8px;
+}
+
+.process_title_left_span {
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+.progress {
+    height: 7px;
+}
+
+.progress-bar {
+    border-radius: 5px;
+}
+
+.progress .progress-bar {
+    background-color: #041230;
+}
+
+
+/* SERVICE */
+#services {
+    margin-bottom: 4rem;
+    justify-content: space-between;
+}
+
+.card_style {
+    border: none;
+    margin-left: 10px;
+    margin-bottom: 3rem;
+    top: 0;
+    transition: top ease 0.5s;
+    box-shadow: 0px 0px 5px 5px #f1f1f1;
+
+
+}
+
+.card_style:hover {
+    top: -10px;
+}
+
+.sevice_icon {
+    margin-top: 10px;
+
+    font-size: 60px;
+    margin-left: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: x-large;
+    padding-bottom: 5px;
+}
+
+.card-text {
+    outline: none;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+/* PORTFOLIO */
+.portfolio_main {
+    margin-top: 3rem;
+}
+
+
+/* --- IMAGE-HOVER --- */
+
+.image-hover {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 15px;
+    color: #041230;
+    overflow: hidden;
+    max-width: 350px;
+    transform: translateZ(0);
+}
+
+.image-hover * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+}
+
+.image-hover .image {
+    padding: 15px 0;
+}
+
+.image-hover .thumb {
+    max-width: 100%;
+
+    opacity: 0.75;
+}
+
+.image-hover .header {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.image-hover .title,
+.image-hover .description {
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+
+    background-color: #fff;
+
+    margin: 0;
+    padding: 15px 25px;
+}
+
+.image-hover .title {
+    font-weight: bold;
+    text-transform: uppercase;
+
+    top: 0;
+
+    transform: translateY(-100%);
+}
+
+.image-hover .description {
+    font-size: 0.8em;
+
+    bottom: 0;
+
+    transform: translateY(100%);
+}
+
+.image-hover a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.image-hover:hover .thumb,
+.image-hover.hover .thumb {
+    transform: scale(1.25);
+
+    opacity: 1;
+}
+
+.image-hover:hover .title,
+.image-hover:hover .description {
+    transform: translateY(0);
+}
+
+
+/* Create three equal columns that floats next to each other */
+.filter_column {
+    float: left;
+    width: 33.33%;
+    display: none;
+    /* Hide all elements by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+.contact_details_for_mail {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact_details_for_mail tr {
+    margin-right: 1rem;
+}
+
+.contact_details_title {
+    font-family: monospace;
+    font-style: oblique;
+    font-weight: 800;
+}
+
+.contact_details_info {
+    font-family: monospace;
+    font-style: oblique;
+}
+
+.contact_form {
+    padding-top: 1rem;
+}
+
+.contact_form input,
+select {
+    width: 70vw;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin-bottom: 1rem;
+}
+
+.contact_form select:focus,
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+.contact_form textarea {
+    height: 70px !important;
+    width: 70vw;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+.contact_form button {
+    float: right;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    background-color: #E3872D;
+    font-weight: 500;
+    font-family: "Montserrat";
+    padding: 12px 35px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.contact_form button:hover {
+    content: "";
+    top: 0px;
+    background-color: #041230;
+    transition-duration: .6s;
+    z-index: 1;
+}
