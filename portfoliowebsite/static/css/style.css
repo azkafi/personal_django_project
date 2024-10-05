@@ -170,7 +170,7 @@ body {
 }
 
 .parallax-image {
-    background-image: url('https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg');
+    background-image: url('https://scontent.fdac24-2.fna.fbcdn.net/v/t39.30808-6/426132242_2138545853148886_800079939381734825_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeH--gsZ1MUzs29oaKoDNPQqrz9KG9axThqvP0ob1rFOGgkABjGlzPO3aJC3rqkoalGwGA1y2cOeprKVsEIDqEa5&_nc_ohc=vWcHRwQ-B1gQ7kNvgF1kf9t&_nc_ht=scontent.fdac24-2.fna&_nc_gid=Ao7BPATTnSKDuMCYKGqf1N2&oh=00_AYDRIRFkleLhhkf-YzTWf2V91GVHPDB0nxnhGM2khQfCCA&oe=67071F74');
     /* Your background image URL */
     background-size: cover;
     background-position: center;
@@ -332,7 +332,7 @@ body {
 .particle {
     height: 100vh;
     position: relative;
-    background-image: url(https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg);
+    background-image: url(https://scontent.fdac24-4.fna.fbcdn.net/v/t39.30808-6/453744965_2253314608338676_8792075427372479312_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH_PJpgMqsSbCUs8O8yCKsI7iUF_SXY683uJQX9JdjrzUi9n7LGby2lL4cHJTlZH7Mh9NLyDzZu245Uk-Uuv41B&_nc_ohc=3cikMHr-BkgQ7kNvgHOC5BQ&_nc_ht=scontent.fdac24-4.fna&_nc_gid=ABfBfalTWvZOrnUSGaLsbEg&oh=00_AYAMerxrPX7ftq8Ck0fQIrePXVZBuQI7_BJrFB8Nu5yUPg&oe=67070AAF);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

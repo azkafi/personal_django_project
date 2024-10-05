@@ -4,4 +4,4 @@ from django.views import View
 
 class RegistrationView(View):
     def get(self, requst):
-        return render(requst,'authentication/signIn.html')
+        return render(requst,'authentication/signUp.html')
