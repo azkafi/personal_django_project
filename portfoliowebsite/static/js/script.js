@@ -92,3 +92,6 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+var interval = setInterval(someFunc, 100);
+clearInterval(interval);

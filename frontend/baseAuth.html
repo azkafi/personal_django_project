@@ -1,0 +1,17 @@
+{% include 'partails/_header.html' %}
+{% load static %}
+    
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/sign-in.css' %}" rel="stylesheet">
+  </head>
+  
+
+    {% include 'partails/_sidebar.html' %}
+    
+<main class="form-signin w-100 m-auto">
+   {% block content %}
+
+   {% endblock %}
+</main>
+
+{% include 'partails/_footer.html' %}

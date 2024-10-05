@@ -1,78 +1,46 @@
-{% include 'header.html' %}
+{% include 'partails/_header.html' %}
 {% load static %}
 <body>
 
   <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
-      aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
-      <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
-        <use href="#circle-half"></use>
-      </svg>
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+            id="bd-theme"
+            type="button"
+            aria-expanded="false"
+            data-bs-toggle="dropdown"
+            aria-label="Toggle theme (auto)">
+      
+      <span class="material-symbols-outlined">
+        radio_button_partial
+        </span>
       <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
     </button>
     <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
       <li>
-        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
-          aria-pressed="false">
-          <svg class="bi me-2 opacity-50" width="1em" height="1em">
-            <use href="#sun-fill"></use>
-          </svg>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
           Light
-          <svg class="bi ms-auto d-none" width="1em" height="1em">
-            <use href="#check2"></use>
-          </svg>
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
       <li>
-        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
-          aria-pressed="false">
-          <svg class="bi me-2 opacity-50" width="1em" height="1em">
-            <use href="#moon-stars-fill"></use>
-          </svg>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
           Dark
-          <svg class="bi ms-auto d-none" width="1em" height="1em">
-            <use href="#check2"></use>
-          </svg>
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
       <li>
-        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
-          aria-pressed="true">
-          <svg class="bi me-2 opacity-50" width="1em" height="1em">
-            <use href="#circle-half"></use>
-          </svg>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
           Auto
-          <svg class="bi ms-auto d-none" width="1em" height="1em">
-            <use href="#check2"></use>
-          </svg>
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
     </ul>
   </div>
 
-  <nav class="navbar-style" data-bs-theme="dark">
-    <ul style="list-style: none;" class="blur_bg">
-      <li><a class="" href="#"><span class="material-symbols-outlined">
-            home_app_logo
-          </span></a></li>
-      <li><a class="" href="#aboutme"><span class="material-symbols-outlined">
-            full_coverage
-          </span></a></li>
-      <li><a class="" href="#abilities"><span class="material-symbols-outlined">
-            webhook
-          </span></a></li>
-
-      <li><a class="" href="#services"><span class="material-symbols-outlined">
-            workspaces
-          </span></a></li>
-      <li><a class="" href="#portfolio"><span class="material-symbols-outlined">
-            collections_bookmark
-          </span></a></li>
-      <li><a class="" href="#contact"><span class="material-symbols-outlined">
-            contacts
-          </span></a></li>
-    </ul>
-  </nav>
+  {% include 'partails/_sidebar.html' %}
 
 
   <main>
@@ -325,10 +293,10 @@
           </div>
         </div>
         <div id="myBtnContainer">
-          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-          <button class="btn" onclick="filterSelection('html')"> HTML</button>
-          <button class="btn" onclick="filterSelection('java')"> Java</button>
-          <button class="btn" onclick="filterSelection('python')"> Python</button>
+          <button class="btn customBtn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn customBtn" onclick="filterSelection('html')"> HTML</button>
+          <button class="btn customBtn" onclick="filterSelection('java')"> Java</button>
+          <button class="btn customBtn" onclick="filterSelection('python')"> Python</button>
         </div>
         <div class="col-lg-4 filter_column html">
           <figure class="image-hover">
@@ -475,18 +443,4 @@
 
 
     <!-- FOOTER -->
-    <footer class="container">
-      <p class="float-end"><a href="#">Back to top</a></p>
-      <p>&copy; 2017–2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
-  </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-  <script src="{% static 'js/script.js' %}"></script>
-  <script src="{% static 'js/plugins.js' %}"></script>
-
-</body>
-
-</html>
+{% include 'partails/_footer.html' %}

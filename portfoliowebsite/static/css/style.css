@@ -39,7 +39,7 @@ body {
 }
 
 .navbar-style ul li a:hover {
-    color: #E3872D;
+    color: orange;
 }
 
 @media only screen and (max-width: 991px) {
@@ -70,8 +70,8 @@ body {
 
 .navbar-style ul a {
     text-align: center;
-    color: black;
     transition: 0.4s;
+    color: #000;
 }
 
 .navbar-style ul a span {
@@ -555,7 +555,7 @@ body {
 }
 
 /* Style the buttons */
-.btn {
+.customBtn {
     border: none;
     outline: none;
     padding: 12px 16px;
@@ -564,7 +564,7 @@ body {
 }
 
 
-.btn.active {
+.customBtn.active {
     background-color: #666;
     color: white;
 }
@@ -634,3 +634,5 @@ textarea:focus {
     transition-duration: .6s;
     z-index: 1;
 }
+
+
