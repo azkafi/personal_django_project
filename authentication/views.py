@@ -5,3 +5,8 @@ from django.views import View
 class RegistrationView(View):
     def get(self, requst):
         return render(requst,'authentication/signUp.html')
+
+class DashboardView(View):
+    def get(self, requst):
+        return render(requst,'dashboard/basePage.html')
+    

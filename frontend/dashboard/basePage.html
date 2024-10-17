@@ -1,0 +1,44 @@
+{% include 'asset/_header.html' %} {% load static %}
+
+<body>
+  {% include 'asset/_sidebar.html' %}
+
+  <main class="dNavbar">
+    <div style="display: flex; justify-content: space-between;">
+      <div  style="display: flex;">
+        <span class="material-symbols-outlined">
+          visibility
+        </span><p>20+</p>
+        </div>
+      <div class="">
+        <div>
+            <div class="icon">---</div>
+            <div class="temp">-°C</div>
+            <div class="summary">----</div>
+            <div class="location"></div>
+        </div>
+      </div>
+      <div style="display: flex;">
+      <div class="nameAndImg" >
+        <div style="display: flex;     margin: 5px 5px -5px 5px;" >
+          <img class="avaterImg" src="https://letsenhance.io/static/03620c83508fc72c6d2b218c7e304ba5/11499/UpscalerAfter.jpg" />
+        <p style="font-family: 'Courier New', Courier, monospace;">user_name</p>
+        </div>
+        
+      </div>
+      <div style="margin-top: 5px;  margin-left: 10px;">
+      <a style="color: red;" class="" href="#logout"
+        ><span class="material-symbols-outlined">
+          power_settings_new
+        </span></a>
+      </div>
+    </div>
+    {% block content %}
+
+   {% endblock %}
+  </main>
+  
+    <!--Linking the javascript code-->
+    <script src="{% static 'js/weather.js' %}"></script>
+</body>
+</html>
