@@ -2,43 +2,113 @@
 
 <body>
   {% include 'asset/_sidebar.html' %}
+  <!-- <script>
+    function previewFile(input) {
+      var file = $("input[type=file]").get(0).files[0];
 
-  <main class="dNavbar">
+      if (file) {
+        var reader = new FileReader();
+
+        reader.onload = function () {
+          $("#previewCoverImage").attr("src", reader.result);
+        }
+
+        reader.readAsDataURL(file);
+      }
+    }
+  </script> -->
+  <main class="dMain">
     <div style="display: flex; justify-content: space-between;">
-      <div  style="display: flex;">
+      <div style="display: flex;">
         <span class="material-symbols-outlined">
           visibility
-        </span><p>20+</p>
-        </div>
+        </span>
+        <p class="website-counter">+</p>
+      </div>
       <div class="">
-        <div>
-            <div class="icon">---</div>
-            <div class="temp">-°C</div>
-            <div class="summary">----</div>
-            <div class="location"></div>
+        <div style="display: flex;">
+          <div class="icon">---</div>
+          <div class="temp">-°C</div>
+          <div class="summary">----</div>
+          <div class="location"></div>
         </div>
       </div>
       <div style="display: flex;">
-      <div class="nameAndImg" >
-        <div style="display: flex;     margin: 5px 5px -5px 5px;" >
-          <img class="avaterImg" src="https://letsenhance.io/static/03620c83508fc72c6d2b218c7e304ba5/11499/UpscalerAfter.jpg" />
-        <p style="font-family: 'Courier New', Courier, monospace;">user_name</p>
+        <div class="nameAndImg">
+          <div style="display: flex;     margin: 5px 5px -5px 5px;">
+            <img class="avaterImg"
+              src="https://letsenhance.io/static/03620c83508fc72c6d2b218c7e304ba5/11499/UpscalerAfter.jpg" />
+            <p style="font-family: 'Courier New', Courier, monospace;">user_name</p>
+          </div>
+
         </div>
-        
+        <div style="margin-top: 5px;  margin-left: 10px;">
+          <a style="color: red;" class="" href="#logout"><span class="material-symbols-outlined">
+              power_settings_new
+            </span></a>
+        </div>
       </div>
-      <div style="margin-top: 5px;  margin-left: 10px;">
-      <a style="color: red;" class="" href="#logout"
-        ><span class="material-symbols-outlined">
-          power_settings_new
-        </span></a>
-      </div>
+
     </div>
     {% block content %}
 
-   {% endblock %}
+    {% endblock %}
+
+    <!-- Profile Image & Name & Title & Cover Imge-->
+
+    <div>
+      <h4>Change Your name from here..</h4>
+      <div style="display: flex; justify-content: space-between;">
+        <div style="margin-top: 30px; width: 40vw;">
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Name</label>
+              <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John doe" required>
+            </div>
+            <div style="display: flex; float: right;">
+              <button type="reset">Clear</button>
+              <button type="submit">Update</button>
+            </div>
+
+          </form>
+
+        </div>
+
+        <div style="float: right; width: 40vw; display: flex; justify-content: space-between;">
+          <div>
+            <input id="file-input" style="display: none;" type="file" name="image" onchange="previewFile(this);"
+              required>
+            <label for="file-input">
+              <img style="height: 250px; width: 250px; border-radius: 100%;"
+                src="https://yt3.googleusercontent.com/ytc/AIdro_lfBIfX_mH_IHqb_ckcOMzxQaBOPdQGDuF6CzlLNM7ly0E=s900-c-k-c0x00ffffff-no-rj"
+                class="img-thumbnail" alt="Profile Imge" id="previewImg">
+            </label>
+            <button type="submit">Upload</button>
+          </div>
+
+          <div>
+            <input id="fileInput" style="display: none;" type="file" name="coverImage" onchange="previewFile(this);"
+              required>
+            <label for="fileInput">
+              <img style="height: 250px; width: 250px; border-radius: 10%;"
+                src="https://yt3.googleusercontent.com/ytc/AIdro_lfBIfX_mH_IHqb_ckcOMzxQaBOPdQGDuF6CzlLNM7ly0E=s900-c-k-c0x00ffffff-no-rj"
+                class="img-thumbnail" alt="Cover Imge" id="previewCoverImage">
+            </label>
+            <button class="btn-bd-primary" type="submit">Upload</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
-  
-    <!--Linking the javascript code-->
-    <script src="{% static 'js/weather.js' %}"></script>
+
+  <!--Linking the javascript code-->
+  <script src="{% static 'js/weather.js' %}"></script>
+  <script src="{% static 'js/sitecounter.js' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
